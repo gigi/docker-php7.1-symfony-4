@@ -8,3 +8,4 @@ Based on php:7.1-fpm
 - git
 - ssh-client
 - zip
+- pgsql
