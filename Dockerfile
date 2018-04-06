@@ -11,7 +11,10 @@ RUN apt-get update && apt-get install -y -q --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-install \
-    zip
+    zip \
+    pdo \
+    pdo_pgsql \
+    pgsql
 
 RUN pecl install \
     xdebug
